@@ -4,12 +4,14 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage[table]{xcolor}
 \setdefaultlanguage{russian}
 \PolyglossiaSetup{russian}{indentfirst=false}
 \setmainfont[Mapping=tex-text]{CMU Serif}
 \pagestyle{empty}
 
 \def\b#1{\textbf{#1}}
+\def\g{\cellcolor{gray!20}}
 \setlength\tabcolsep{3pt}
 
 \begin{document}
@@ -44,36 +46,36 @@
 %\section{Глаголы}
 \begin{tabular}{|cc|c|c|c|c|c|c|}
 \hline
-\multirow{2}{*}{глаголы} & & & & \multicolumn{2}{c|}{активное} & \multicolumn{2}{c|}{пассивное} \\
+\multirow{2}{*}{глаголы} & &\g &\g изъяв. &\multicolumn{2}{c|}{\g активное} & \multicolumn{2}{c|}{\g пассивное} \\
 \cline{5-8}
-& & время & изъяв. & прич. & деепр. & прич. & деепр. \\
+& & \g время & \g накл. & \g прич. & \g деепр. & \g прич. & \g деепр. \\
 \hline
-инфитинив & \b{-i} & прош. & \b{-is} & \b{-inta} & \b{-inte} & \b{-ita} & \b{-ite} \\
+инфитинив & \b{-i} & \g прош. & \b{-is} & \b{-inta} & \b{-inte} & \b{-ita} & \b{-ite} \\
 \cline{3-8}
-императив & \b{-u} & наст. & \b{-as} & \b{-anta} & \b{-ante} & \b{-ata} & \b{-ate} \\
+императив & \b{-u} & \g наст. & \b{-as} & \b{-anta} & \b{-ante} & \b{-ata} & \b{-ate} \\
 \cline{3-8}
-условное & \b{-us} & будущ. & \b{-os} & \b{-onta} & \b{-onte} & \b{-ota} & \b{-ote} \\
+условное & \b{-us} & \g будущ. & \b{-os} & \b{-onta} & \b{-onte} & \b{-ota} & \b{-ote} \\
 \hline
 \end{tabular}
 
 %\section{Личные местоимения}
 \begin{tabular}{|c|cc|cc|}
 \hline
-& \multicolumn{2}{c|}{Един.} & \multicolumn{2}{c|}{Множ.} \\
+\g & \multicolumn{2}{c|}{\g Един.} & \multicolumn{2}{c|}{\g Множ.} \\
 \hline
-1 & \b{mi} & я & \b{ni} & мы \\
+\g 1 & \b{mi} & я & \b{ni} & мы \\
 \hline
-2 & \multicolumn{2}{c}{\b{vi}} & \multicolumn{2}{c|}{ты, вы} \\
+\g 2 & \multicolumn{2}{c}{\b{vi}} & \multicolumn{2}{c|}{ты, вы} \\
 \hline
-& \b{li} & он & & \\
+\g & \b{li} & он & & \\
 \cline{2-3}
-3 & \b{ŝi} & она & \b{ili} & они \\
+\g 3 & \b{ŝi} & она & \b{ili} & они \\
 \cline{2-3}
-& \b{ĝi} & оно & & \\	 
+\g & \b{ĝi} & оно & & \\	 
 \hline
-$\nearrow$ & \multicolumn{2}{c}{\b{oni}} & \multicolumn{2}{c|}{[безлич.]} \\
+\g $\nearrow$ & \multicolumn{2}{c}{\b{oni}} & \multicolumn{2}{c|}{[безлич.]} \\
 \hline
-$\leftarrow$ & \multicolumn{2}{c}{\b{si}} & \multicolumn{2}{c|}{себя} \\
+\g $\leftarrow$ & \multicolumn{2}{c}{\b{si}} & \multicolumn{2}{c|}{себя} \\
 \hline
 \end{tabular}
 \quad
@@ -137,28 +139,28 @@ re- & повторение \\
 -um- & [разное] \\
 \hline
 \end{tabular}
-
 \vspace{1em}
+
 %\section{Местоимения}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
- & \b{-a} & \b{-al} & \b{-am} & \b{-e} & \b{-el} & \b{-es} & \b{-o} & \b{-om} & \b{-u} \\
-& качество & причина & время & место & способ & принадл. & предмет & количество & \scalebox{.875}[1.0]{который/индивид} \\
+\g & \g\b{-a} & \g\b{-al} & \g\b{-am} & \g\b{-e} & \g\b{-el} & \g\b{-es} & \g\b{-o} & \g\b{-om} & \g\b{-u} \\
+\g & \g качество & \g причина & \g время & \g место & \g способ & \g принадл. & \g предмет & \g количество & \g\scalebox{.875}[1.0]{который/индивид} \\
 \hline
-\b{ki-} & \b{kia} & \b{kial} & \b{kiam} & \b{kie} & \b{kiel} & \b{kies} & \b{kio} & \b{kiom} & \b{kiu} \\
-\scalebox{.75}[1.0]{вопросит.} & какой & почему & когда & где & как & чей & что & сколько & кто/который \\
+\g\b{ki-} & \b{kia} & \b{kial} & \b{kiam} & \b{kie} & \b{kiel} & \b{kies} & \b{kio} & \b{kiom} & \b{kiu} \\
+\g\scalebox{.75}[1.0]{вопросит.} & какой & почему & когда & где & как & чей & что & сколько & кто/который \\
 \hline
-\b{ti-} & \b{tia} & \b{tial} & \b{tiam} & \b{tie} & \b{tiel} & \b{ties} & \b{tio} & \b{tiom} & \b{tiu} \\
-\scalebox{.75}[1.0]{указат.} & такой & потому & тогда & там & так & того & то & столько & то/тот \\
+\g\b{ti-} & \b{tia} & \b{tial} & \b{tiam} & \b{tie} & \b{tiel} & \b{ties} & \b{tio} & \b{tiom} & \b{tiu} \\
+\g\scalebox{.75}[1.0]{указат.} & такой & потому & тогда & там & так & того & то & столько & то/тот \\
 \hline
-\b{ĉi-} & \b{ĉia} & \b{ĉial} & \b{ĉiam} & \b{ĉie} & \b{ĉiel} & \b{ĉies} & \b{ĉio} & \b{ĉiom} & \b{ĉiu} \\
-\scalebox{.75}[1.0]{определит.} & всякий & \scalebox{.75}[1.0]{по\,всякой\,причине} & всегда & везде & \scalebox{.75}[1.0]{по-всякому} & \scalebox{.75}[1.0]{принадл.\,всем} & всё & всё & все/всякий \\
+\g\b{ĉi-} & \b{ĉia} & \b{ĉial} & \b{ĉiam} & \b{ĉie} & \b{ĉiel} & \b{ĉies} & \b{ĉio} & \b{ĉiom} & \b{ĉiu} \\
+\g\scalebox{.75}[1.0]{определит.} & всякий & \scalebox{.75}[1.0]{по\,всякой\,причине} & всегда & везде & \scalebox{.75}[1.0]{по-всякому} & \scalebox{.75}[1.0]{принадл.\,всем} & всё & всё & все/всякий \\
 \hline
-\b{i-} & \b{ia} & \b{ial} & \b{iam} & \b{ie} & \b{iel} & \b{ies} & \b{io} & \b{iom} & \b{iu} \\
-\scalebox{.75}[1.0]{неопредел.} & какой-то & почему-то & когда-то & где-то & как-то & чей-то & что-то & сколько-то & кто-то/какой-то \\
+\g\b{i-} & \b{ia} & \b{ial} & \b{iam} & \b{ie} & \b{iel} & \b{ies} & \b{io} & \b{iom} & \b{iu} \\
+\g\scalebox{.75}[1.0]{неопредел.} & какой-то & почему-то & когда-то & где-то & как-то & чей-то & что-то & сколько-то & кто-то/какой-то \\
 \hline
-\b{neni-} & \b{nenia} & \b{nenial} & \b{neniam} & \b{nenie} & \b{neniel} & \b{nenies} & \b{nenio} & \b{neniom} & \b{neniu} \\
-\scalebox{.75}[1.0]{отрицат.} & никакой & нипочему & никогда & нигде & никак & ничей & ничто & нисколько & никто/никакой \\
+\g\b{neni-} & \b{nenia} & \b{nenial} & \b{neniam} & \b{nenie} & \b{neniel} & \b{nenies} & \b{nenio} & \b{neniom} & \b{neniu} \\
+\g\scalebox{.75}[1.0]{отрицат.} & никакой & нипочему & никогда & нигде & никак & ничей & ничто & нисколько & никто/никакой \\
 \hline
 \end{tabular}
 
