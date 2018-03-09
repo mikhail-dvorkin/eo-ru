@@ -2,6 +2,7 @@
 \usepackage[a4paper,margin=2em]{geometry}
 \usepackage{polyglossia}
 \usepackage{array}
+\usepackage{multirow}
 \usepackage{tabularx}
 \setdefaultlanguage{russian}
 \PolyglossiaSetup{russian}{indentfirst=false}
@@ -9,47 +10,72 @@
 \pagestyle{empty}
 
 \def\b#1{\textbf{#1}}
-\setlength\tabcolsep{2pt}
+\setlength\tabcolsep{3pt}
 
 \begin{document}
 
-{\Huge Шпаргалка по эсперанто}
+\begin{tabular}{c}
+{\Huge Шпаргалка по эсперанто} \\
+{\small Elias N. Jaquez, Krescentja, @mikhail\textunderscore{}dvorkin} \\
+\end{tabular}
+\hspace{3em}
 %\section{Буквы}
-\begin{tabular}{ccccccccccc}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
 \b{с} & \b{ĉ} & \b{g} & \b{ĝ} & \b{h} & \b{ĥ} & \b{j} & \b{ĵ} & \b{ŝ} & \b{ŭ} & q, w, x, y \\
 ц & ч & г & дж & h & х & й & ж & ш & w & --- \\
+\hline
 \end{tabular}
 
 %\section{Окончания}
-\begin{tabular}{r>{\bfseries}l}
-существ. & -o \\
-прилаг. & -a \\
+\begin{tabular}{|r>{\bfseries}l|}
+\hline
+существит. & -o \\
+прилагат. & -a \\
 наречие & -e \\
 множ. число & -j \\
 вин. падеж & -n \\
 направление & -n \\
+\hline
 \end{tabular}
+\quad
 %\section{Глаголы}
-\begin{tabular}{cccccc}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
 время & изъяв. & актив. прич. & пассив. прич. & ~ & ~ \\
+\hline
 наст. & \b{-as} & \b{-anta} & \b{-ata} & инфитинив & \b{-i} \\
+\hline
 прош. & \b{-is} & \b{-inta} & \b{-ita} & императив & \b{-u} \\
+\hline
 будущ. & \b{-os} & \b{-onta} & \b{-ota} & условное & \b{-us} \\
+\hline
 \end{tabular}
 
 %\section{Личные местоимения}
-\begin{tabular}{cccc}
-\multicolumn{2}{c}{Един.} & \multicolumn{2}{c}{Множ.} \\
+\begin{tabular}{|cc|cc|}
+\hline
+\multicolumn{2}{|c|}{Един.} & \multicolumn{2}{|c|}{Множ.} \\
+\hline
 \b{mi} & я & \b{ni} & мы \\
-\multicolumn{2}{c}{\b{vi}} & \multicolumn{2}{c}{ты, вы} \\
+\hline
+\multicolumn{2}{|c}{\b{vi}} & \multicolumn{2}{c|}{ты, вы} \\
+\hline
 \b{li} & он & & \\
+\cline{1-2}
 \b{ŝi} & она & \b{ili} & они \\
+\cline{1-2}
 \b{ĝi} & оно & & \\	 
-\multicolumn{2}{c}{\b{oni}} & \multicolumn{2}{c}{[безлич.]} \\
-\multicolumn{2}{c}{\b{si}} & \multicolumn{2}{c}{себя} \\
+\hline
+\multicolumn{2}{|c}{\b{oni}} & \multicolumn{2}{c|}{[безлич.]} \\
+\hline
+\multicolumn{2}{|c}{\b{si}} & \multicolumn{2}{c|}{себя} \\
+\hline
 \end{tabular}
+\quad
 %\section{Аффиксы}
-\begin{tabular}{>{\bfseries}rl}
+\begin{tabular}{|>{\bfseries}rl}
+\hline
 -aĉ- & презрение \\
 -ad- & длительность \\
 -aĵ- & вещь \\
@@ -57,11 +83,14 @@
 -ar- & совокупность \\
 bo- & по браку \\
 ĉef- & главный \\
--ĉjo$^*$ & уменьш.-ласк. (м) \\
+-ĉjo$^*$ & уменьш.-ласк.(м) \\
 dis- & разъединение \\
-\multicolumn{2}{l}{$^*$ --- \em{к сокращ. корню}} \\
+\multicolumn{2}{|l}{$^*$ --- \em{к сокращ. корню}} \\
+\hline
 \end{tabular}
+\hspace{-1em}
 \begin{tabular}{>{\bfseries}rl}
+\hline
 -ebl- & возможность \\
 -ec- & свойство \\
 -eg- & увеличение \\
@@ -72,8 +101,11 @@ eks- & бывший \\
 -end- & обязательность \\
 -er- & частица \\
 -estr- & начальник \\
+\hline
 \end{tabular}
+\hspace{-1em}
 \begin{tabular}{>{\bfseries}rl}
+\hline
 -et- & уменьшение \\
 fi- & противность \\
 ge- & оба пола \\
@@ -84,49 +116,68 @@ ge- & оба пола \\
 -in- & женщина \\
 -ind- & достойный \\
 -ing- & футляр \\
+\hline
 \end{tabular}
-\begin{tabular}{>{\bfseries}rl}
+\hspace{-1em}
+\begin{tabular}{>{\bfseries}rl|}
+\hline
 -ism- & доктрина \\
 -ist- & профессия \\
 mal- & антоним \\
 mis- & ошибочность \\
--njo$^*$ & уменьш.-ласк. (ж) \\
+-njo$^*$ & уменьш.-ласк.(ж) \\
 pra- & предок \\
 re- & повторение \\
 -uj- & контейнер \\
 -ul- & персона \\
 -um- & [разное] \\
+\hline
 \end{tabular}
 
+\vspace{1em}
 %\section{Местоимения}
-\begin{tabular}{lccccccccc}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
  & \b{-a} & \b{-al} & \b{-am} & \b{-e} & \b{-el} & \b{-es} & \b{-o} & \b{-om} & \b{-u} \\
-Категория: & качество & причина & время & место & способ & принадл. & предмет & количество & который/индивид \\
+& качество & причина & время & место & способ & принадл. & предмет & количество & который/индивид \\
+\hline
 \b{ki-} & \b{kia} & \b{kial} & \b{kiam} & \b{kie} & \b{kiel} & \b{kies} & \b{kio} & \b{kiom} & \b{kiu} \\
-вопрос. & какой & почему & когда & где & как & чей & что & сколько & кто/который \\
+вопросит. & какой & почему & когда & где & как & чей & что & сколько & кто/который \\
+\hline
 \b{ti-} & \b{tia} & \b{tial} & \b{tiam} & \b{tie} & \b{tiel} & \b{ties} & \b{tio} & \b{tiom} & \b{tiu} \\
 указат. & такой & потому & тогда & там & так & того & то & столько & то/тот \\
+\hline
 \b{ĉi-} & \b{ĉia} & \b{ĉial} & \b{ĉiam} & \b{ĉie} & \b{ĉiel} & \b{ĉies} & \b{ĉio} & \b{ĉiom} & \b{ĉiu} \\
 определит. & всякий & по всяк. прич. & всегда & везде & по-всякому & прин. всем & всё & всё & все/всякий \\
+\hline
 \b{i-} & \b{ia} & \b{ial} & \b{iam} & \b{ie} & \b{iel} & \b{ies} & \b{io} & \b{iom} & \b{iu} \\
 неопредел. & какой-то & почему-то & когда-то & где-то & как-то & чей-то & что-то & сколько-то & кто-то/какой-то \\
+\hline
 \b{neni-} & \b{nenia} & \b{nenial} & \b{neniam} & \b{nenie} & \b{neniel} & \b{nenies} & \b{nenio} & \b{neniom} & \b{neniu} \\
 отрицат. & никакой & нипочему & никогда & нигде & никак & ничей & ничто & нисколько & никто/никакой \\
+\hline
 \end{tabular}
 
+\vspace{1em}
 %\section{Числительные}
-\begin{tabular}{cccccccccccccccccc}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
 $-$ & $+$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 100 & 1000 & $10^6$ & $10^9$ & $10^{6x}$ \\
 \b{minus} & \b{plus} & \b{nul} & \b{unu} & \b{du} & \b{tri} & \b{kvar} & \b{kvin} & \b{ses} & \b{sep} & \b{ok} & \b{naŭ} & \b{dek} & \b{cent} & \b{mil} & \b{miliono} & \b{miliardo} & $x$-\b{iliono} \\
+\hline
 \end{tabular}
 
-\begin{tabular}{ccccccccc}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
 \b{trio} & \b{tria} & \b{triono} & \b{trifoje} & \b{triafoje} & \b{triobla} & \b{triope} & \b{trie} & \b{po tri} \\
 тройка/троица/трио & третий & треть & трижды & в третий раз & тройной & втроём  & в-третьих & по три \\ 
+\hline
 \end{tabular}
 
+\vspace{1em}
 %\section{Служебные части речи}
-\begin{tabular}{>{\bfseries}rl}
+\begin{tabular}{|>{\bfseries}rl}
+\hline
 ajn & - бы ни \\
 al & к \\
 ~ & {}[дат. падеж] \\
@@ -143,8 +194,11 @@ baldaŭ & вскоре \\
 ĉar & потому что \\
 ĉe & у, при \\
 ĉi (ti-) & {}[близость] \\
+\hline
 \end{tabular}
+\hspace{-1em}
 \begin{tabular}{>{\bfseries}rl}
+\hline
 ĉirkaŭ & вокруг \\
 ĉu & ли, вопр.ч. \\
 da & {}[род. падеж: мера] \\
@@ -161,8 +215,11 @@ fi & фи, фу \\
 for & вдали \\
 ĝis & пока не, до \\
 inter & между \\
+\hline
 \end{tabular}
+\hspace{-3em}
 \begin{tabular}{>{\bfseries}rl}
+\hline
 ja & ведь, же \\
 jam & уже \\
 je & {}[разное] \\
@@ -179,14 +236,17 @@ kvankam & хотя \\
 kvazaŭ & как будто \\
 la & {}[артикль] \\
 laŭ & согласно \\
+\hline
 \end{tabular}
+\hspace{-1em}
 \begin{tabular}{>{\bfseries}rl}
+\hline
 malgraŭ & вопреки \\
 mem & сам(а/о) \\
 ne & нет, не \\
 nek & ни \\
 nu & ну \\
-nun & сейчас \\
+nun & сечас \\
 nur & только \\
 ol & чем \\
 per & с помощью \\
@@ -197,8 +257,11 @@ plu & дальше, ещё \\
 por & для, чтобы \\
 post & после \\
 preskaŭ & почти \\
+\hline
 \end{tabular}
-\begin{tabular}{>{\bfseries}rl}
+\hspace{-1em}
+\begin{tabular}{>{\bfseries}rl|}
+\hline
 preter & мимо \\
 pri & o(б), про \\
 pro & из-за \\
@@ -215,6 +278,7 @@ trans & через \\
 tre & очень \\
 tro & слишком \\
 tuj & сразу \\
+\hline
 \end{tabular}
 
 \end{document}
